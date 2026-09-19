@@ -1,6 +1,6 @@
 {
   "name": "maya-skills",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Maya AIGC skills — diagnosis, inspection, playblast export preview, and workflow routing.",
   "author": {"name": "AIGC Skills Community"},
   "homepage": "https://github.com/full-aigc-skills/maya-skills",
