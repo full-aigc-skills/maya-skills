@@ -1,0 +1,42 @@
+{
+  "maya-diagnose": {
+    "purpose": "对 Maya 启动、模块、ABI、路径和运行时错误进行只读分诊",
+    "artifact": "maya-diagnostic-report",
+    "success": "错误类别、脱敏证据、影响范围和人工恢复步骤相互对应",
+    "not_for": "自动安装 Maya、Python 包或在未授权时修改模块路径",
+    "near_miss": "场景内容盘点或 Playblast 导出",
+    "basic_prompt": "分析一段 Maya 模块加载错误并给出不安装软件的排查顺序",
+    "failure_prompt": "诊断探针无法连接 Maya 或日志只包含部分堆栈",
+    "advanced_context": "多台工作站的 Maya 与 Python ABI 不一致"
+  },
+  "maya-export-preview": {
+    "purpose": "从已授权 Maya 场景导出可验证且可恢复的 Playblast 预览",
+    "artifact": "maya-artifact-receipt",
+    "success": "视频文件、SHA-256、帧范围、分辨率、模式和场景状态还原证据完整",
+    "not_for": "最终离线渲染、未经确认的上传或自动重试可能重复产生副作用的导出",
+    "near_miss": "只读场景检查或第三方视频剪辑",
+    "basic_prompt": "以白模模式导出当前镜头的短 Playblast 并返回回执",
+    "failure_prompt": "导出完成但状态还原失败或媒体探测结果不完整",
+    "advanced_context": "需要先盘点场景再导出并可选交给即梦网页流程"
+  },
+  "maya-inspect": {
+    "purpose": "只读检查 Maya 场景并生成确定性的场景回执",
+    "artifact": "maya-scene-receipt",
+    "success": "scene_id、相机、帧范围、分辨率、引用、命名空间和警告均有可复查来源",
+    "not_for": "修改场景、创建相机、修复材质或启动渲染",
+    "near_miss": "错误诊断或 Playblast 导出",
+    "basic_prompt": "检查当前 Maya 场景的相机、帧范围和外部引用",
+    "failure_prompt": "场景未保存、Maya 不可达或读取期间场景发生变化",
+    "advanced_context": "导出前需要对大型含引用场景建立可重复基线"
+  },
+  "maya-use": {
+    "purpose": "在 Maya 检查、预览导出和故障诊断技能之间做零副作用路由",
+    "artifact": "maya-skill-routing-decision",
+    "success": "唯一目标技能、选择理由、必要顺序和交接字段明确",
+    "not_for": "代替专项技能执行 Maya 操作或在目标已明确时增加无意义路由",
+    "near_miss": "直接提出检查、导出或诊断的明确请求",
+    "basic_prompt": "判断一个先检查场景再导出预览的请求应如何分步",
+    "failure_prompt": "用户目标含糊或前一步没有返回可交接的 scene_id",
+    "advanced_context": "检查、导出与故障恢复组成的多阶段 Maya 工作流"
+  }
+}

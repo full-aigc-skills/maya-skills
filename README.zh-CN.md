@@ -2,6 +2,8 @@
 
 **Maya AIGC 技能** — 诊断/检查/Playblast 导出预览/工作流路由。本包包含 **4 个技能**。
 
+当前版本：`v1.0.1`。全部技能包含渐进式 references 与可执行场景示例，确定性 TRACE 基分均为 `4.65`。
+
 ## 📦 安装
 
 ```bash
@@ -24,3 +26,13 @@ Claude Code / Codex / Cursor / OpenCode / Gemini CLI / GitHub Copilot / Windsurf
 ## 📄 License
 
 Apache 2.0
+
+## ✅ 发布门禁
+
+```bash
+python3 scripts/lint_skills.py
+python3 scripts/generate_quality_resources.py
+python3 scripts/trace_gate.py --evaluator <trace_evaluate.py> --threshold 4.5
+```
+
+完整结果见 [TRACE_EVALUATION.md](TRACE_EVALUATION.md)。
