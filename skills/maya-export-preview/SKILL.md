@@ -6,6 +6,8 @@ license: Apache-2.0 — see LICENSE
 
 # maya-export-preview — 即梦 Maya 可恢复预览导出
 
+若用户要安装官方“即梦 Seedance 2.5 白模渲染上传器”，或通过其界面把视频带入即梦网页参考输入，应使用 `maya-dreamina-export`（安装：`npx skills add full-aigc-skills/maya-skills --skill maya-dreamina-export`）。下述 `scripts/maya_runner.py` 等命令属于消费插件提供的宿主运行时；本技能仓没有这些脚本。仅在宿主明确提供并探测到它们时执行，不能把独立安装本技能视为运行时就绪。
+
 从已授权的 Maya 场景导出 Playblast 预览，产出 Codex `artifact_receipt`，并在用户明确
 授权后通过官方本地桥接返回即梦链接。
 **所有临时改动的场景状态都会被快照并在 `finally` 中恢复。**

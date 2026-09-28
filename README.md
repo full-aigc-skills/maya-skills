@@ -1,8 +1,8 @@
 # maya-skills
 
-**Maya AIGC 技能** — 诊断/检查/Playblast 导出预览/工作流路由。本包包含 **4 个技能**。
+**Maya AIGC 技能** — 诊断/检查/Playblast 导出预览/即梦参考视频导出/工作流路由。本包包含 **5 个技能**。
 
-当前版本：`v1.0.2`。全部技能包含渐进式 references 与可执行场景示例，确定性 TRACE 基分均为 `4.65`。
+当前清单版本：`v1.1.0`。技能附有按需加载的示例与参考资料；发布前应重新运行 TRACE 质量门禁。
 
 ## 📦 安装
 
@@ -10,11 +10,12 @@
 npx skills add full-aigc-skills/maya-skills
 ```
 
-## 🎯 技能列表 (4)
+## 🎯 技能列表 (5)
 
 | 技能 | 描述 |
 |------|------|
 | `maya-diagnose` | 诊断 Maya 插件失败：分类 MAYA_NOT_FOUND / MODULE_ERROR / SYNTAX / RUNTIME |
+| `maya-dreamina-export` | 安装即梦 Seedance 2.5 白模渲染上传器，通过相机渲染或本地视频交接至即梦参考视频 |
 | `maya-inspect` | 只读检查已授权 Maya 场景，生成包含摄像机/回放/当前形状的场景回执 |
 | `maya-export-preview` | 从授权 Maya 场景导出 Playblast 预览，含编解码器/帧率/尺寸/SHA-256 |
 | `maya-use` | 路由器：把请求分发到最窄的 Maya 工作流 |
@@ -26,13 +27,13 @@ Claude Code / Codex / Cursor / OpenCode / Gemini CLI / GitHub Copilot / Windsurf
 <!-- FULL_STACK_DOC_START -->
 ## 项目定位与边界
 
-`maya-skills` 是包含 **4 个可独立安装 Agent Skill** 的源代码仓库，当前清单版本为 `1.0.1`。本仓负责技能的触发说明、工作流、references、examples 与质量门禁；宿主插件的 Hook、MCP、凭据注入和运行时脚本不属于本仓职责。
+`maya-skills` 是包含 **5 个可独立安装 Agent Skill** 的源代码仓库，当前清单版本为 `1.1.0`。本仓负责技能的触发说明、工作流、references、examples 与质量门禁；宿主插件的 Hook、MCP、凭据注入和运行时脚本不属于本仓职责。
 
 | 已确认事实 | 值 | 证据 |
 |---|---|---|
 | 安装包 | `full-aigc-skills/maya-skills` | `.claude-plugin/plugin.json`、仓库远端 |
-| 可安装技能 | 4 | `skills/*/SKILL.md` |
-| 当前版本 | `1.0.1` | `.claude-plugin/plugin.json` |
+| 可安装技能 | 5 | `skills/*/SKILL.md` |
+| 当前版本 | `1.1.0` | `.claude-plugin/plugin.json` |
 | 规格事实源 | OpenSpec | `openspec/config.yaml` |
 | 许可证 | Apache-2.0 | `LICENSE` |
 

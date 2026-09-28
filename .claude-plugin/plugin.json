@@ -1,13 +1,14 @@
 {
   "name": "maya-skills",
-  "version": "1.0.2",
-  "description": "Maya AIGC skills — diagnosis, inspection, playblast export preview, and workflow routing.",
+  "version": "1.1.0",
+  "description": "Maya AIGC skills — diagnosis, inspection, Playblast preview, official Jimeng reference-video export, and workflow routing.",
   "author": {"name": "AIGC Skills Community"},
   "homepage": "https://github.com/full-aigc-skills/maya-skills",
   "repository": "https://github.com/full-aigc-skills/maya-skills",
   "source": "./",
   "skills": [
     "./skills/maya-diagnose",
+    "./skills/maya-dreamina-export",
     "./skills/maya-export-preview",
     "./skills/maya-inspect",
     "./skills/maya-use"
