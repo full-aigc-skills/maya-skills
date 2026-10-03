@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maya 需求导航"
+  short_description: "按 Maya 场景检查、预览导出或故障诊断需求选择技能入口"
+  default_prompt: "使用 $maya-use 按 Maya 场景检查、预览导出或故障诊断需求选择技能入口；先核对输入、可用能力和交付要求。"

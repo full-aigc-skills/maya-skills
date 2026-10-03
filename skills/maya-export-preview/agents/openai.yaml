@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maya 可恢复预览导出"
+  short_description: "按已授权场景导出 Playblast 预览，检查媒体回执与临时状态恢复"
+  default_prompt: "使用 $maya-export-preview 按已授权场景导出 Playblast 预览，检查媒体回执与临时状态恢复；先核对输入、可用能力和交付要求。"

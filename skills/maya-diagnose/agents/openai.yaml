@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maya 环境故障诊断"
+  short_description: "只读分类 Maya 插件、路径和版本问题，报告脱敏诊断且不安装包"
+  default_prompt: "使用 $maya-diagnose 只读分类 Maya 插件、路径和版本问题，报告脱敏诊断且不安装包；先核对输入、可用能力和交付要求。"
